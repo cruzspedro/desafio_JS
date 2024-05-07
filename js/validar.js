@@ -89,7 +89,7 @@ neste caso o objeto 'email'
 
 function validarEmail(e){ 
     //declaração da expressão regular para definir o formato de um email válido
-    const regexEmail = /^[A-Za-z0-9]+@[A-Za-z0-9]+\.(br|com|net|org)/;
+    const regexEmail = /^[A-Za-z0-9]+@[A-Za-z0-9]+\.(br|com|net|org)$/;
     
     console.log(e); //impressão em console do objeto evento e
     console.log(e.target.value); //impressão em console do valor do objeto 'email' que originou o evento   
@@ -116,7 +116,7 @@ neste caso o objeto 'senha'
 function validarSenha(e){ 
 
     //declaração da expressão regular para definir o formato de um senha válido
-    const regexSenha = /.{6,20}/;
+    const regexSenha = /^.{6,20}$/;
 
     // expressão regular para encontrar caracteres especiais
     var regexEspeciais = /[#@%&!+]/g;
