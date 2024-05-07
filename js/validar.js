@@ -147,6 +147,7 @@ function validarSenha(e){
         //muda o conteúdo e o estilo do objeto senhaHelp que referencia o elemento html com id=inputPasswordHelp
         senhaHelp.textContent = "Senha inválida"; 
         senhaHelp.style.color="red";
+        passStrengthMeter.value = '0';
         // return aqui é importante para que não continue no código e acabe verificando outras coisas. Aqui já deu erro, pode parar já.
         return ;
     }
